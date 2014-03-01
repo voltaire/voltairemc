@@ -86,6 +86,7 @@ settings:
       admin: '%sender% to online admins ->- %message%'
       generic: '%message%'
       death: '%message%'
+      say: '[Server] %message%'
     from-irc:
       chat: '[%srcChannel%] <%sender%> %message%'
       private: '%sender% whispers> %message%'
@@ -96,6 +97,7 @@ settings:
       kick: '[%srcChannel%] * %sender% was kicked by %moderator% (%message%)'
       nick: '[%srcChannel%] * %sender% is now known as %message%'
       generic: '%message%'
+      say: '[Server] %message%'
     from-plain:
       action: '* %sender% %message%'
       say: '[Server] %message%'
