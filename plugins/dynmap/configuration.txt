@@ -191,7 +191,7 @@ zoomoutperiod: 30
 enabletilehash: true
 
 # Optional - hide ores: render as normal stone (so that they aren't revealed by maps)
-#hideores: true
+hideores: true
 
 # Optional - enabled BetterGrass style rendering of grass and snow block sides
 better-grass: true
