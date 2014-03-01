@@ -1,4 +1,5 @@
 bsdlp*
 logs
 *.jar
+.fuse*
 
