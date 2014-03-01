@@ -1,0 +1,104 @@
+worlds:
+-   name: apollan
+    title: apollan
+    enabled: true
+    protected: false
+    sendposition: true
+    sendhealth: true
+    bigworld: false
+    extrazoomout: 2
+    visibilitylimits: [
+        ]
+    hiddenlimits: [
+        ]
+    autogenerate-to-visibilitylimits: none
+    hidestyle: stone
+    maps:
+    -   class: org.dynmap.hdmap.HDMap
+        name: flat
+        title: Flat
+        prefix: flat
+        perspective: iso_S_90_lowres
+        shader: stdtexture
+        lighting: shadows
+        image-format: default
+        mapzoomin: 2
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: surface
+        title: Surface
+        prefix: t
+        perspective: iso_SE_60_lowres
+        shader: stdtexture
+        lighting: shadows
+        image-format: default
+        mapzoomin: 2
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: cave
+        title: Cave
+        prefix: ct
+        perspective: iso_SE_60_lowres
+        shader: cave
+        lighting: default
+        image-format: default
+        mapzoomin: 2
+        append_to_world: ''
+        protected: false
+    -   class: org.dynmap.hdmap.HDMap
+        name: topo
+        title: Topographic
+        prefix: topo
+        perspective: iso_SE_60_lowres
+        shader: topo
+        lighting: default
+        image-format: default
+        mapzoomin: 2
+        append_to_world: ''
+        protected: false
+-   name: apollan_nether
+    title: apollan_nether
+    enabled: true
+    extrazoomout: 2
+    maps:
+    -   class: org.dynmap.hdmap.HDMap
+        name: flat
+        title: Flat
+        prefix: flat
+        perspective: iso_S_90_lowres
+        shader: stdtexture
+        lighting: nethershadows
+        background: '#300806'
+        mapzoomin: 2
+    -   class: org.dynmap.hdmap.HDMap
+        name: nether
+        title: Surface
+        prefix: nt
+        perspective: iso_SE_60_lowres
+        shader: stdtexture
+        lighting: nethershadows
+        background: '#300806'
+        mapzoomin: 2
+-   name: apollan_the_end
+    title: apollan_the_end
+    enabled: true
+    extrazoomout: 2
+    maps:
+    -   class: org.dynmap.hdmap.HDMap
+        name: flat
+        title: Flat
+        prefix: flat
+        perspective: iso_S_90_lowres
+        shader: stdtexture
+        lighting: brightnight
+        mapzoomin: 2
+    -   class: org.dynmap.hdmap.HDMap
+        name: the_end
+        title: Surface
+        prefix: st
+        perspective: iso_SE_60_lowres
+        shader: stdtexture
+        lighting: brightnight
+        mapzoomin: 2

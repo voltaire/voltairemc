@@ -1,0 +1,5 @@
+server.basics:
+    description: basic perms
+    default: true
+    children:
+        bukkit.command.list: true
