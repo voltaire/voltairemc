@@ -9,7 +9,7 @@
 #   The definitions of these templates are in normal-lowres.txt, nether-lowres.txt, and skylands-lowres.txt
 # To use the HDMap hi-res map templates (these can take a VERY long time for initial fullrender), set value to hires
 #   The definitions of these templates are in normal-hires.txt, nether-hires.txt, and skylands-hires.txt
-deftemplatesuffix: lowres
+deftemplatesuffix: hires
 
 components:
   - class: org.dynmap.ClientConfigurationComponent
@@ -194,10 +194,10 @@ enabletilehash: true
 #hideores: true
 
 # Optional - enabled BetterGrass style rendering of grass and snow block sides
-#better-grass: true
+better-grass: true
 
 # Optional - enable smooth lighting by default on all maps supporting it (can be set per map as lighting option)
-smooth-lighting: false
+smooth-lighting: true
 
 # Default image format for HDMaps (png, jpg, jpg-q75, jpg-q80, jpg-q85, jpg-q90, jpg-q95, jpg-q100)
 # Has no effect on maps with explicit format settings
@@ -410,5 +410,5 @@ maps:
     title: "voltaireMC"
     prefix: hdm1
     perspective: iso_S_90_hires
-    shader: stdtexture
+    shader: default
     lighting: nightandday
