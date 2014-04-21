@@ -10,28 +10,28 @@
 # IRC: #spigot @ irc.esper.net ( http://webchat.esper.net/?channel=spigot )
 # Forums: http://www.spigotmc.org/forum/
 
-config-version: 5
+config-version: 6
 commands:
-  silent-commandblock-console: false
   replace-commands:
   - setblock
   - summon
   - testforblock
   - tellraw
+  tab-complete: 0
+  silent-commandblock-console: false
   spam-exclusions:
   - /skill
   log: true
-  tab-complete: true
 settings:
-  bungeecord: false
-  sample-count: 12
-  late-bind: false
-  filter-creative-items: true
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
   netty-threads: 3
   player-shuffle: 0
+  bungeecord: false
+  late-bind: false
+  sample-count: 12
+  filter-creative-items: true
   log-filters:
   - ^(.*)(/login)(.*)$
   prevent-proxies: false
@@ -50,8 +50,6 @@ stats:
 world-settings:
   default:
     verbose: true
-    enable-zombie-pigmen-portal-spawns: true
-    zombie-aggressive-towards-villager: true
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -72,14 +70,9 @@ world-settings:
       replace-blocks:
       - 1
       - 5
-    growth:
-      cactus-modifier: 100
-      cane-modifier: 100
-      melon-modifier: 100
-      mushroom-modifier: 100
-      pumpkin-modifier: 100
-      sapling-modifier: 100
-      wheat-modifier: 100
+    max-bulk-chunks: 5
+    max-entity-collisions: 8
+    dragon-death-sound-radius: 0
     entity-activation-range:
       animals: 32
       monsters: 32
@@ -93,10 +86,17 @@ world-settings:
     ticks-per:
       hopper-transfer: 8
       hopper-check: 8
+    hopper-amount: 1
     random-light-updates: false
-    max-entity-collisions: 8
     save-structure-info: true
-    max-bulk-chunks: 5
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
     view-distance: 10
     chunks-per-tick: 650
     clear-tick-list: false
@@ -105,8 +105,11 @@ world-settings:
       item: 2.5
     mob-spawn-range: 4
     nerf-spawner-mobs: false
-    arrow-despawn-rate: 1200
     item-despawn-rate: 6000
+    arrow-despawn-rate: 1200
+    enable-zombie-pigmen-portal-spawns: true
+    wither-spawn-sound-radius: 0
+    zombie-aggressive-towards-villager: true
 listeners:
 - port: default
   host: default
