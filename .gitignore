@@ -3,4 +3,5 @@ logs
 *.jar
 .fuse*
 .update-lock
+usercache.json
 
