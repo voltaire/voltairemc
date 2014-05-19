@@ -136,11 +136,11 @@ settings:
 bots:
 
   - nickname: 'voltaireMC'
-    server: 'irc.4lulz.org'           # Change this to the IRC server you wish to connect to
-    port: 6667
+    server: 'irc.oftc.net'           # Change this to the IRC server you wish to connect to
+    port: 6697
     userident: 'voltaire'              #Username/ident, anything you want
     serverpass: ''                #This isn't the nickserv password
-    ssl: false
+    ssl: true
 
     #Prevent flood by setting a delay (in ms) between messages to IRC and a maximum queue size.
     message-delay: 1000
@@ -165,11 +165,11 @@ bots:
     ## Channels for this bot to join. ##
     channels:
 
-      - name: '#voltairemc'
+      - name: '##voltairemc'
         password: ''
 
         #Identifies this channel's endpoint (for the paths: section).
-        tag: 'weedmx'
+        tag: 'oftc'
 
         #Send raw IRC commands to the server every time I join this channel.
         on-join:
