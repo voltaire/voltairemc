@@ -13,7 +13,7 @@ deftemplatesuffix: hires
 
 components:
   - class: org.dynmap.ClientConfigurationComponent
-  
+
   #- class: org.dynmap.InternalClientUpdateComponent
   #  sendhealth: true
     sendposition: true
@@ -42,7 +42,7 @@ components:
   #  hideifshadow: 4
   #  # Optional - make player hidden when they are under cover (#=sky light level,0=underground,15=open to sky)
   #  hideifundercover: 14
-  #  # (Optional) if true, players that are crouching/sneaking will be hidden 
+  #  # (Optional) if true, players that are crouching/sneaking will be hidden
     hideifsneaking: true
     # If true, player positions/status is protected (login with ID with dynmap.playermarkers.seeall permission required for info other than self)
     protected-player-info: false
@@ -66,12 +66,12 @@ components:
   #  webchat-permissions: false
   #  # Limit length of single chat messages
   #  chatlengthlimit: 256
-   
+
   - class: org.dynmap.SimpleWebChatComponent
     allowchat: true
     # If true, web UI users can supply name for chat using 'playername' URL parameter.  'trustclientname' must also be set true.
     allowurlname: false
-  
+
   # Note: this component is needed for the dmarker commands, and for the Marker API to be available to other plugins
   - class: org.dynmap.MarkersComponent
     type: markers
@@ -95,7 +95,7 @@ components:
     spawnbedhidebydefault: true
     spawnbedminzoom: 0
     spawnbedformat: "%name%'s bed"
-    
+
   - class: org.dynmap.ClientComponent
     type: chat
     allowurlname: false
@@ -126,12 +126,12 @@ components:
     layerprio: 0
     # Optional - label for player marker layer (default is 'Players')
     label: "Players"
-    
+
   #- class: org.dynmap.ClientComponent
   #  type: digitalclock
   - class: org.dynmap.ClientComponent
     type: link
-    
+
   - class: org.dynmap.ClientComponent
     type: timeofdayclock
     showdigitalclock: true
@@ -142,7 +142,7 @@ components:
     label: "Location"
     hidey: false
     show-mcr: false
-    
+
   # Note: more than one logo component can be defined
   #- class: org.dynmap.ClientComponent
   #  type: logo
@@ -157,7 +157,7 @@ components:
   #  timeout: 1800 # in seconds (1800 seconds = 30 minutes)
   #  redirecturl: inactive.html
   #  #showmessage: 'You were inactive for too long.'
-  
+
   #- class: org.dynmap.TestComponent
   #  stuff: "This is some configuration-value"
 
@@ -282,10 +282,10 @@ render-triggers:
 webpage-title: "voltairemc"
 
 # The path where the tile-files are placed.
-tilespath: /srv/http/mcsite/public_html/map/tiles
+tilespath: /srv/spigot/plugins/dynmap/web/tiles/
 
 # The path where the web-files are located.
-webpath: /srv/http/mcsite/public_html/map
+webpath: /srv/spigot/plugins/dynmap/web/
 
 # The network-interface the webserver will bind to (0.0.0.0 for all interfaces, 127.0.0.1 for only local access).
 webserver-bindaddress: 0.0.0.0
@@ -319,7 +319,7 @@ progressloginterval: 100
 # Parallel fullrender: if defined, number of concurrent threads used for fullrender or radiusrender
 #   Note: setting this will result in much more intensive CPU use, some additional memory use.  Caution should be used when
 #  setting this to equal or exceed the number of physical cores on the system.
-parallelrendercnt: 4
+parallelrendercnt: 1
 
 # Interval the browser should poll for updates.
 updaterate: 2000
@@ -386,7 +386,7 @@ url:
     #tiles: "tiles/"
     # markers base URL
     #markers: "tiles/"
-    
+
 # Spout support controls
 spout:
     # If false, ignore spout even if detected
@@ -395,7 +395,7 @@ spout:
     # can result in stale textures if originals are updated - delete files in texturepacks/standard/spoout
     # to clean cached textures and force reload on next startup)
     use-existing-textures: true
-    
+
 # Set to true to enable verbose startup messages - can help with debugging map configuration problems
 # Set to false for a much quieter startup log
 verbose: false
