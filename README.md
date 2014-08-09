@@ -18,3 +18,9 @@ Reddit.
 ## Whitelist
 
 Apply to get whitelisted [here](https://mc.voltaire.sh/signup).
+
+## Start server
+
+```bash
+docker run -d -p 25565:25565 -v /srv/spigot/bsdlp:/srv/spigot/bsdlp -v /srv/spigot/bsdlp_the_end:/srv/spigot/bsdlp_the_end -v /srv/spigot/bsdlp_nether:/srv/spigot/bsdlp_nether -v /srv/spigot/logs:/srv/spigot/logs -v /srv/spigot/plugins/dynmap/web/tiles:/srv/spigot/plugins/dynmap/web/tiles voltairemc/voltairemc
+```
