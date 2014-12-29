@@ -1,4 +1,0 @@
-#!/bin/sh
-
-cd /srv/spigot/
-/srv/spigot/start 2>&1
