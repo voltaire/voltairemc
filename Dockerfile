@@ -8,7 +8,7 @@ VOLUME ["/srv/spigot/bsdlp", "/srv/spigot/bsdlp_nether", "/srv/spigot/bsdlp_the_
 ADD . /srv/spigot/
 
 ADD http://dev.bukkit.org/media/files/758/666/CraftIRC.jar /srv/spigot/plugins/CraftIRC.jar
-ADD http://dev.bukkit.org/media/files/805/524/dynmap-2.0.0-alpha-1.jar /srv/spigot/plugins/dynmap.jar
+ADD http://dev.bukkit.org/media/files/853/318/dynmap-2.1.jar /srv/spigot/plugins/dynmap.jar
 ADD http://dev.bukkit.org/media/files/793/351/WorldBorder.jar /srv/spigot/plugins/WorldBorder.jar
 
 ADD start /service/voltairemc/run
